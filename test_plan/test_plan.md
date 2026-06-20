@@ -59,19 +59,18 @@ To make it more visual, please find below the coverage matrix.
 - Enter 10 euro to the 'Stake' field
 - Draw your attention to the Odds in 'Bet slip' form
 - Draw your attention to the Potential Payout value
-- Click on 'Draw' button for the same match
-- Enter 10 euro to the 'Stake' field
-- Draw your attention to the Odds value in 'Bet slip' form
-- Draw your attention to the Potential Payout value
+- Draw your attention to the Match Winner value
 - Click 'Place bet' button
 - Draw your attention to the Stake value
 - Draw your attention to the Odds value
 - Draw your attention to the Potential payout value
+- Draw your attention to the Match Winner value
 
 **Expected Result**:
 - Stakes on all forms equal to 10 euro
 - Odds across all forms are equal
 - Potential payout is calculated as 10 euro * odds
+- Match Winner value corresponds to selected
 
 ### **ID**: T-04 <br />
 **Title**: User is able to rebet after error during Bet slip processing <br />
@@ -101,6 +100,8 @@ To make it more visual, please find below the coverage matrix.
 - Draw your attention to the Odds in 'Bet slip' form
 - Draw your attention to the Potential Payout value
 - Click on 'Draw' button for the same match
+- Enter 11 euro to the 'Stake' field
+- Click on random winner button for any other available upcoming match
 
 **Expected Result**:
 - Bet slip form is updated
