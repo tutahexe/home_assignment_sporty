@@ -22,7 +22,7 @@ To make it more visual, please find below the coverage matrix.
 ### **ID**: T-01 <br />
 **Title**: Bet placement End to End <br />
 **Priority**: Critical <br />
-**Risk Rationale**: The most important feature in this FRS. User should always be able to go through the happy pass<br />
+**Risk Rationale**: Bet placement is the core business flow of the application. User should always be able to go through the happy pass<br />
 **Steps**:
 - Precondition: Login as user with more than 100 euro on balance to application
 - Go to the Upcoming Football Matches page
@@ -39,11 +39,11 @@ To make it more visual, please find below the coverage matrix.
 ### **ID**: T-02 <br />
 **Title**: User is not able to put bet with insufficient funds <br />
 **Priority**: Critical  <br />
-**Risk Rationale**: Everything about company money is also top priority <br />
+**Risk Rationale**: Validation of available balance is critical for preventing financial inconsistencies and unauthorized transactions <br />
 **Steps**:
 - Precondition: Login as user with 20 euro balance
 - Open Bet slip for any available match
-- Enter 25 euro to the stake field<br />
+- Enter 25 euro to the stake field
 
 **Expected Result**:
 - Insufficient balance error message is displayed
@@ -52,7 +52,7 @@ To make it more visual, please find below the coverage matrix.
 ### **ID**: T-03 <br />
 **Title**: Stakes and potential payout is calculated properly <br />
 **Priority**: Critical <br />
-**Risk Rationale**: Everything about money in general is also very important <br />
+**Risk Rationale**: Incorrect calculations can lead to financial problems and loss of user trust<br />
 **Steps**:
 - As precondition: Login as user with 20 euro balance
 - Click on random winner button for first available upcoming matches page
@@ -76,7 +76,7 @@ To make it more visual, please find below the coverage matrix.
 ### **ID**: T-04 <br />
 **Title**: User is able to rebet after error during Bet slip processing <br />
 **Priority**: Critical  <br />
-**Risk Rationale**: It's essential for software to handle possible errors<br />
+**Risk Rationale**: Users may experience temporary connectivity issues, it's essential for software to handle possible errors<br />
 **Steps**: <br />
 - Precondition: Login as user with more than 100 euro on balance to application
 - Open Bet slip for any available match
@@ -93,7 +93,7 @@ To make it more visual, please find below the coverage matrix.
 ### **ID**: T-05 <br />
 **Title**: New odd replaces previous selection for already selected Bet Slip <br />
 **Priority**: High <br />
-**Risk Rationale**: Since we are testing single bet functionality we need to make sure that system handles properly when user changes decision <br />
+**Risk Rationale**: The bet slip must accurately reflect the latest selection to prevent unintended bets <br />
 **Steps**:
 - As precondition: Login as user with 20 euro balance
 - Click on random winner button for first available upcoming matches page
@@ -110,7 +110,7 @@ To make it more visual, please find below the coverage matrix.
 ### **ID**: T-05 <br />
 **Title**: User is able to filter Upcoming football matches <br />
 **Priority**: Medium  <br />
-**Risk Rationale**: Every AC should have at least one check, so I've decided to add this test despite lower priority <br />
+**Risk Rationale**: Incorrect filtering can negatively affect usability. Despite lower priority this test was included to make sure that all AC are covered <br />
 **Steps**:
 - As precondition: Login as user
 - Open Date filter
