@@ -91,7 +91,7 @@ To make it more visual, please find below the coverage matrix.
 - After receipt is closed - balance reflects current value
 
 ### **ID**: T-05 <br />
-**Title**: New odd replaces previous selection for Upcoming football matches <br />
+**Title**: New odd replaces previous selection for already selected Bet Slip <br />
 **Priority**: High <br />
 **Risk Rationale**: Since we are testing single bet functionality we need to make sure that system handles properly when user changes decision <br />
 **Steps** <br />
