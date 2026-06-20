@@ -4,7 +4,7 @@
 This test plan consists of 6 to cover most functionality described in FRS.
 In classic test design we are creating test to cover only single requirement.
 But since I'm limited with amount of tests I decided to design them in more practical way to cover all AC.
-
+Some tests are made a little bit abstract to prevent pesticide paradox.
 
 ## Coverage matrix
 To make it more visual, please find below the coverage matrix.
@@ -26,7 +26,7 @@ To make it more visual, please find below the coverage matrix.
 **Steps**:
 - Precondition: Login as user with more than 100 euro on balance to application
 - Go to the Upcoming Football Matches page
-- Click on random winner button for first available upcoming matches page
+- Click on random winner button for first available upcoming match
 - Set value between 1 and 100 into the stake field
 - Hit Place bet button
 - Review receipt popup
@@ -55,7 +55,7 @@ To make it more visual, please find below the coverage matrix.
 **Risk Rationale**: Incorrect calculations can lead to financial problems and loss of user trust<br />
 **Steps**:
 - As precondition: Login as user with 20 euro balance
-- Click on random winner button for first available upcoming matches page
+- Click on random winner button for first available upcoming match
 - Enter 10 euro to the 'Stake' field
 - Draw your attention to the Odds in 'Bet slip' form
 - Draw your attention to the Potential Payout value
@@ -96,7 +96,7 @@ To make it more visual, please find below the coverage matrix.
 **Risk Rationale**: The bet slip must accurately reflect the latest selection to prevent unintended bets <br />
 **Steps**:
 - As precondition: Login as user with 20 euro balance
-- Click on random winner button for first available upcoming matches page
+- Click on random winner button for first available upcoming match
 - Enter 10 euro to the 'Stake' field
 - Draw your attention to the Odds in 'Bet slip' form
 - Draw your attention to the Potential Payout value
