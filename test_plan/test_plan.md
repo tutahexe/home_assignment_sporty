@@ -2,7 +2,7 @@
 
 ## Description
 This test plan consists of 6 to cover most functionality described in FRS.
-In classic test design we are creating test to cover only single requirement.
+In classic test design we are creating test to cover only single check.
 But since I'm limited with amount of tests I decided to design them in more practical way to cover all AC.
 Some tests are made a little bit abstract to prevent pesticide paradox.
 
