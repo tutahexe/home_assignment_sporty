@@ -4,7 +4,7 @@
 |:----:|:------:|:-------------:|
 | T-01 |  Fail  |  B-01, B-02   |
 | T-02 |  Fail  |     B-02      |
-| T-03 |  Pass  |       -       |
+| T-03 |  Fail  |     B-04      |
 
 ## Bugs
 
@@ -62,3 +62,23 @@
 **Actual Result**: 
 - User is able to place bet for past match as for any upcoming match
  ![img.png](bug_evidences/img4.png)
+
+### **Bug ID**: B-04 <br />
+**Title**: Potential payout is calculated not properly <br />
+**Severity**: Critical <br />
+**Business Impact**: Since calculated potential payout is lower than should be - we can face a lot of issues (i.e. loss of user trust, legal issues) <br />
+**Steps**:
+- Precondition: Login as user with 100 euro on balance to application
+- Go to the Upcoming Football Matches page
+- Click on random winner button for first available PAST match
+- Set value 100 into the stake field
+- Hit Place bet button
+- Draw your attention to the Potential payout amount in receipt popup
+
+**Expected Result**: 
+- Amount of potential payout should be calculated as stake multiplied by odds
+
+**Actual Result**: 
+- Amount of potential payout is calculated as stake multiplied by odds minus some amount
+- Further investigation leads that issue is Front-end related (back-end sends amount properly)
+- ![img.png](bug_evidences/img5.png)
