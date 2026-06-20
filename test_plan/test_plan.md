@@ -40,12 +40,12 @@ To make it more visual, please find below the coverage matrix.
 **Title**: User is not able to put bet with insufficient funds <br />
 **Priority**: Critical  <br />
 **Risk Rationale**: Everything about company money is also top priority <br />
-**Steps** <br />
+**Steps**:
 - Precondition: Login as user with 20 euro balance
 - Open Bet slip for any available match
 - Enter 25 euro to the stake field<br />
 
-**Expected Result**: <br />
+**Expected Result**:
 - Insufficient balance error message is displayed
 - Place bet button is disabled<br />
 
@@ -53,7 +53,7 @@ To make it more visual, please find below the coverage matrix.
 **Title**: Stakes and potential payout is calculated properly <br />
 **Priority**: Critical <br />
 **Risk Rationale**: Everything about money in general is also very important <br />
-**Steps** <br />
+**Steps**:
 - As precondition: Login as user with 20 euro balance
 - Click on random winner button for first available upcoming matches page
 - Enter 10 euro to the 'Stake' field
@@ -68,7 +68,7 @@ To make it more visual, please find below the coverage matrix.
 - Draw your attention to the Odds value
 - Draw your attention to the Potential payout value
 
-**Expected Result**: <br />
+**Expected Result**:
 - Stakes on all forms equal to 10 euro
 - Odds across all forms are equal
 - Potential payout is calculated as 10 euro * odds
@@ -77,7 +77,7 @@ To make it more visual, please find below the coverage matrix.
 **Title**: User is able to rebet after error during Bet slip processing <br />
 **Priority**: Critical  <br />
 **Risk Rationale**: It's essential for software to handle possible errors<br />
-**Steps** <br />
+**Steps**: <br />
 - Precondition: Login as user with more than 100 euro on balance to application
 - Open Bet slip for any available match
 - Enter 25 euro to the 'Stake' field
@@ -94,7 +94,7 @@ To make it more visual, please find below the coverage matrix.
 **Title**: New odd replaces previous selection for already selected Bet Slip <br />
 **Priority**: High <br />
 **Risk Rationale**: Since we are testing single bet functionality we need to make sure that system handles properly when user changes decision <br />
-**Steps** <br />
+**Steps**:
 - As precondition: Login as user with 20 euro balance
 - Click on random winner button for first available upcoming matches page
 - Enter 10 euro to the 'Stake' field
@@ -102,7 +102,7 @@ To make it more visual, please find below the coverage matrix.
 - Draw your attention to the Potential Payout value
 - Click on 'Draw' button for the same match
 
-**Expected Result**: <br />
+**Expected Result**:
 - Bet slip form is updated
 - Stakes field is empty
 - Odds updated according to draw value
@@ -111,7 +111,7 @@ To make it more visual, please find below the coverage matrix.
 **Title**: User is able to filter Upcoming football matches <br />
 **Priority**: Medium  <br />
 **Risk Rationale**: Every AC should have at least one check, so I've decided to add this test despite lower priority <br />
-**Steps** <br />
+**Steps**:
 - As precondition: Login as user
 - Open Date filter
 - Set start date as current date
@@ -122,5 +122,5 @@ To make it more visual, please find below the coverage matrix.
 - Set maximum Odd as 5
 - Click 'Apply button'
 
-**Expected Result**: <br />
+**Expected Result**:
 - In 'Upcoming Football Matches' you can see only upcoming matches filtered by date range and odds
