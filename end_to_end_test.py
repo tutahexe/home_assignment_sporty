@@ -1,6 +1,10 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
+from api import reset_balance
+
+reset_balance()
+
 driver = webdriver.Chrome()
 
 driver.implicitly_wait(10)
