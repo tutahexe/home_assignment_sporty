@@ -11,9 +11,11 @@
 - strategy_and_reccomendations - finished task for part C: description on made decisions and further recommendations
 
 # How to run automation:
+## Installation
 * Install all necessary packages ```pip install -r requirements.txt```
+* UI test uses API request to reset balance before each run, so manual reset is not required
 
-# Test execution:
+## Test execution:
 - Go to automated_tests directory: <br />
 ```cd .\automated_tests\```  <br />
 - Run tests with following command: <br />
