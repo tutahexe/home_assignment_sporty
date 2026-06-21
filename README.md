@@ -17,7 +17,7 @@
 * UI test uses API request to reset balance before each run, so manual reset is not required
 
 ## Credentials
-Update URL and user in pytest.ini
+Update URL and user in .\automated_tests\pytest.ini
 
 ## Test execution:
 - Go to automated_tests directory: <br />
