@@ -14,19 +14,19 @@ class UpcomingMatchesHelper:
         bet_slip_input.send_keys(stake)
 
     def click_place_bet_button(self):
-        self.ui.find_element(By.ID, "bet-slip-place-bet").click()
+        self.ui.wd.find_element(By.ID, "bet-slip-place-bet").click()
 
     def get_payout_modal_title(self):
-        return self.ui.find_element(By.XPATH, "//*[@class='modalTitle']").text
+        return self.ui.wd.find_element(By.XPATH, "//*[@class='modalTitle']").text
 
     def get_payout_modal_stake_value(self):
-        return self.ui.find_element(By.ID, "modal-success-stake").text
+        return self.ui.wd.find_element(By.ID, "modal-success-stake").text
 
     def get_payout_modal_payout_value(self):
-        return self.ui.find_element(By.ID, "modal-success-payout").text
+        return self.ui.wd.find_element(By.ID, "modal-success-payout").text
 
     def close_payout_modal(self):
-        self.ui.find_element(By.ID, "modal-success-close").click()
+        self.ui.wd.find_element(By.ID, "modal-success-close").click()
 
-    def get_user_balance(self):
-        self.ui.find_element(By.XPATH, "//*[@id='header-balance']/span[2]")
+    def get_user_balance_label(self):
+        return self.ui.wd.find_element(By.XPATH, "//*[@id='header-balance']/span[2]").text
