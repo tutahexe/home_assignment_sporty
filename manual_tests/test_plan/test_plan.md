@@ -1,4 +1,4 @@
-# Tests plan
+# Test plan
 
 ## Description
 This test plan consists of 6 to cover most functionality described in FRS.
