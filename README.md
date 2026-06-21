@@ -12,9 +12,9 @@
 
 # How to run automation:
 ## Installation
-* To run tests you need to install python 3.12+
-* Install all necessary packages ```pip install -r requirements.txt```
-* UI test uses API request to reset balance before each run, so manual reset is not required
+* Python 3.12+ required
+* All necessary packages can be installed with command  ```pip install -r requirements.txt```
+* UI test uses API request to reset balance before each test, so manual reset is not required
 
 ## Credentials
 Update URL and user in .\automated_tests\pytest.ini

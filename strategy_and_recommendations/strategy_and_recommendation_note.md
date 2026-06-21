@@ -11,7 +11,8 @@ Rebet flow (T-04) - this test depends on network loss and recovery, which is mig
 ## Your top 2–3 recommendations if this project were to scale
 * Improve Test Framework Architecture:
   * Rework steps layer(add Page layer) 
-  * Reporting for future CI/CD integration
+  * Split api.py into necessary layers
+  * Reporting implementation (i.e. allure) for future CI/CD integration
   * Move configuration to env variables
 * Introduce Performance and Load Testing:
   * Include performance as part of regular sprint activities (since product can have many concurrent users) 
