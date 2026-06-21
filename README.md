@@ -12,6 +12,7 @@
 
 # How to run automation:
 ## Installation
+* To run tests you need to install python 3.12+
 * Install all necessary packages ```pip install -r requirements.txt```
 * UI test uses API request to reset balance before each run, so manual reset is not required
 
@@ -21,4 +22,4 @@
 - Run tests with following command: <br />
 ```pytest```<br />
 ### Note:
-UI automated test will fail because it is blocked by reported issues (please find in testing_results)
+Both automated tests will fail because they are blocked by reported issues (please find in testing_results)
