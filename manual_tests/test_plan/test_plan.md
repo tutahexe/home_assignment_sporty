@@ -4,7 +4,7 @@
 This test plan consists of 6 to cover most functionality described in FRS.
 In classic test design we are creating test to cover only single check.
 But since I'm limited with amount of tests I decided to design them in more practical way to cover all AC.
-Some tests are made a little bit abstract to prevent pesticide paradox.
+Some tests are made a little bit abstract to reduce effect of pesticide paradox.
 
 ## Coverage matrix
 To make it more visual, please find below the coverage matrix.
