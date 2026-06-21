@@ -24,19 +24,16 @@ def api(base_url, user):
 def prepare_balance_for_test(api):
     api.reset_balance()
 
+
 def pytest_addoption(parser):
-    parser.addini(
-        "base_url",
-        help="Base URL"
-    )
-    parser.addini(
-        "user",
-        help="Test user"
-    )
+    parser.addini("base_url", help="Base URL")
+    parser.addini("user", help="Test user")
+
 
 @pytest.fixture(scope="session")
 def base_url(request):
     return request.config.getini("base_url")
+
 
 @pytest.fixture(scope="session")
 def user(request):
