@@ -1,4 +1,4 @@
-from Pages.upcoming_matches_page import UpcomingMatchesHelper
+from Pages.upcoming_matches_helper import UpcomingMatchesHelper
 
 
 class UI:
