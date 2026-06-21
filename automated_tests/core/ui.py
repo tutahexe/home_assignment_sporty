@@ -1,7 +1,7 @@
 from ..steps.upcoming_matches_helper import UpcomingMatchesHelper
 
-class UI:
 
+class UI:
     def __init__(self, wd, base_url, user):
         self.wd = wd
         self.base_url = base_url

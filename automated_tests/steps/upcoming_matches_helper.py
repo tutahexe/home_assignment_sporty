@@ -6,7 +6,9 @@ class UpcomingMatchesHelper:
         self.ui = ui
 
     def open_bet_slip_for_first_upcoming_match(self):
-        self.ui.wd.find_element(By.ID, "odds-mls-inter-miami-lafc-2026-06-20-away").click()
+        self.ui.wd.find_element(
+            By.ID, "odds-mls-inter-miami-lafc-2026-06-20-away"
+        ).click()
 
     def add_stake_amount_to_bet_slip(self, stake):
         bet_slip_input = self.ui.wd.find_element(By.ID, "bet-slip-stake-input")
@@ -29,4 +31,6 @@ class UpcomingMatchesHelper:
         self.ui.wd.find_element(By.ID, "modal-success-close").click()
 
     def get_user_balance_label(self):
-        return self.ui.wd.find_element(By.XPATH, "//*[@id='header-balance']/span[2]").text
+        return self.ui.wd.find_element(
+            By.XPATH, "//*[@id='header-balance']/span[2]"
+        ).text
