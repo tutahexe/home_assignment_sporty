@@ -1,7 +1,8 @@
 import pytest
 from selenium import webdriver
-from fixtures.api import API
-from fixtures.ui import UI
+
+from .core.api import API
+from .core.ui import UI
 
 api_fixture = None
 ui_fixture = None
