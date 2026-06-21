@@ -16,6 +16,9 @@
 * Install all necessary packages ```pip install -r requirements.txt```
 * UI test uses API request to reset balance before each run, so manual reset is not required
 
+## Credentials
+Update URL and user in pytest.ini
+
 ## Test execution:
 - Go to automated_tests directory: <br />
 ```cd .\automated_tests\```  <br />
