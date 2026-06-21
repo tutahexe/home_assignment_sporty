@@ -42,7 +42,7 @@ class API:
         payload = {
             "matchId": match_id,
             "selection": "HOME",
-            "stake": round(amount + 1, 2),
+            "stake": amount,
         }
 
         response = requests.post(
