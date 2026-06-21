@@ -13,8 +13,10 @@
 # How to run automation:
 * Install all necessary packages ```pip install -r requirements.txt```
 
-# Test execution
+# Test execution:
 - Go to automated_tests directory: <br />
 ```cd .\automated_tests\```  <br />
 - Run tests with following command: <br />
-```pytest```
+```pytest```<br />
+### Note:
+UI automated test will fail because it is blocked by reported issues (please find in testing_results)
