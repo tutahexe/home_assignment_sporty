@@ -7,8 +7,16 @@ class UpcomingMatchesHelper:
 
     def open_bet_slip_for_first_upcoming_match(self):
         self.ui.wd.find_element(
-            By.ID, "odds-mls-inter-miami-lafc-2026-06-20-away"
+            By.XPATH,
+            "//*[text()='UPCOMING']/../../following-sibling::div[@class='oddsGrid']/button",
         ).click()
+
+    def expected_payout_value_for_first_upcoming_match_for_stake(self, stake):
+        odds = self.ui.wd.find_element(
+            By.XPATH,
+            "//*[text()='UPCOMING']/../../following-sibling::div[@class='oddsGrid']/button/span[2]",
+        ).text
+        return f"€{float(odds) * stake:.2f}"
 
     def add_stake_amount_to_bet_slip(self, stake):
         bet_slip_input = self.ui.wd.find_element(By.ID, "bet-slip-stake-input")

@@ -10,6 +10,9 @@ def test_user_is_able_to_make_bet_on_upcoming_football_match(ui):
     ui.upcoming_matches.click_place_bet_button()
     assert ui.upcoming_matches.get_payout_modal_title() == "Bet Placed Successfully!"
     assert ui.upcoming_matches.get_payout_modal_stake_value() == "€100.00"
-    assert ui.upcoming_matches.get_payout_modal_payout_value() == "€245.00"
+    assert (
+        ui.upcoming_matches.get_payout_modal_payout_value()
+        == ui.upcoming_matches.expected_payout_value_for_first_upcoming_match_for_stake(100)
+    )
     ui.upcoming_matches.close_payout_modal()
     assert ui.upcoming_matches.get_user_balance_label() == "Balance: €20.00"

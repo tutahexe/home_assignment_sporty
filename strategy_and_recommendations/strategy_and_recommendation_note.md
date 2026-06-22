@@ -13,6 +13,7 @@ Rebet flow (T-04) - this test depends on network loss and recovery, which is mig
   * Rework steps layer(add Page layer) 
   * Split api.py into necessary layers
   * Add markers to tests
+  * Add messages to asserts
   * Reporting implementation (i.e. allure) for future CI/CD integration
   * Move configuration to env variables
 * Introduce Performance and Load Testing:
