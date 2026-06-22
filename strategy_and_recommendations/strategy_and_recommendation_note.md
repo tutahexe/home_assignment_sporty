@@ -12,6 +12,7 @@ Rebet flow (T-04) - this test depends on network loss and recovery, which is mig
 * Improve Test Framework Architecture:
   * Rework steps layer(add Page layer) 
   * Split api.py into necessary layers
+  * Add markers to tests
   * Reporting implementation (i.e. allure) for future CI/CD integration
   * Move configuration to env variables
 * Introduce Performance and Load Testing:
@@ -19,4 +20,4 @@ Rebet flow (T-04) - this test depends on network loss and recovery, which is mig
   * Simulate realistic peak traffic scenarios (since product can have a huge load during some sport events)
 * Security audit
   * Perform periodic security audits 
-  * Perform penetration testing of the API.
+  * Perform penetration testing of the API
